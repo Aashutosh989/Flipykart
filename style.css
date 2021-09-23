@@ -1,0 +1,127 @@
+body{
+    font-family: 'Ubuntu-Regular';
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url('fonts/Ubuntu-Regular.ttf');
+}
+
+.navbar{
+    display: flex;
+    background: #0059ff;
+    height: 55px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+#logo{
+    display: inline-block;
+    margin: 8px 10px 0px 10px;
+}
+
+#logo img{
+    border-radius: 4px;
+}
+
+#sbox{
+    margin: 8px 0px 0px 200px;
+    height: 35px;
+    width: 460px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04aa6d00;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: absolute;
+    right: 130px;
+    display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #383a38;}
+
+#cart{
+    position: absolute;
+    right: 50px;
+    margin-top: 4px;
+}
+
+#cart img{
+    height: 40px;
+    width: 40px;
+}
+
+#container{
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box{
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.116);
+    height: 210px;
+    width: 190px;
+    margin: 5px 1px;
+    cursor: pointer;
+}
+
+.box:hover{
+    box-shadow: 1px 1px 6px 2px #000000;
+}
+.box img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 151px;
+    width: 190px;
+    margin-bottom: 4px;
+}
+
+.price{
+    font-size: 15px;
+    margin-left: 6px;
+}
+
+.name{
+    margin-left: 6px;
+}
